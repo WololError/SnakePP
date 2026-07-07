@@ -1,0 +1,3 @@
+exe/*
+build/*
+headers/Snake/bestScore.txt
