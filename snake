@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if [ "$1" = "reset" ]; then
+    rm -f "$SCRIPT_DIR/headers/Snake/bestScore.txt"
+    echo "Best score reset."    
+    exit 0
+fi
+
+"$SCRIPT_DIR/exe/snake"

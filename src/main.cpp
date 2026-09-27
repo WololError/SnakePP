@@ -9,9 +9,10 @@
 #include "Snake/snake.h"
 
 #include <filesystem>
+namespace fs = std::filesystem;
 
 int main() {
-    
+    fs::current_path(fs::canonical("/proc/self/exe").parent_path().parent_path());
     while (true) {
         Snake snake;
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
