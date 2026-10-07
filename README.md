@@ -10,6 +10,10 @@ Object-oriented implementation of the classic Snake game in C++ using Allegro 5.
 ```bash
 sudo apt install build-essential liballegro5-dev
 ```
+or
+```bash
+sudo pacman -S base-devel allegro
+```
 
 ## Build & Run
 
